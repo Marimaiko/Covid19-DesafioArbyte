@@ -1,42 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 - Desafio Arbyte</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index2.js"></script>
-    <script src="index3.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+
+    <script src="index3.js" defer></script>
     <link rel="stylesheet" type="text/css" href="index.css">
-</head>
+
+<!-- <script>
+  const fn = () =>
+  {
+    const country = 'china';
+    axios.get(`https://api.covid19api.com/country/${country}`)
+    .then(function(res) 
+    {
+    console.log(res.data);
+    })
+  }
+</script> -->
+  </head>
+
+
 <body>
 
-    <div class="container">
-        <h2>Form control: input</h2>
+  <div class="parallax"></div>
+
+
+  <div class='head'>    
+    <h1><a ><img src="https://fontmeme.com/permalink/200806/e04b010fe3bba677831d2f3942735679.png" alt="fontes-de-maquina-de-escrever" border="0"></a ></h1>
+    <h2><a><img src="https://fontmeme.com/permalink/200806/5c399c7b18c57fe230ce005a3e164f5f.png" alt="fontes-de-maquina-de-escrever" border="0"></a></h2>
+  </div>
+
+
+    <div class="container-input">
+        <h1>Selecione um país </h1> <br>
         <form>
-          <div class="form-group">
-            <label for="usr">Name:</label>
-            <input type="text" class="form-control" id="usr">
+          <div class="caixa-input" >
+            <span>Insira um país: </span>
+            <input id="countryInput"/>     
+            
+            <div class="botao">
+             <br> <button class="button" onclick="getData()">Gerar dados</button>
           </div>
+            
+            
+          <h2 id='country' value='china'>Pais</h2 >
+          <h2 id="countryCode">Código do País</h2>
+          <h2 id="casesConfirmed">Casos confirmados</h2>
+          <h2 id="LastDate">Última data</h2>
+        </div>
         </form>
-      </div>
+  </div>
       
 
+<div class='info-covid'>
+  <h1>Entenda sobre a pandemia da COVID-19</h1>
+  <p id='info-covid'>Textão aqui</p>
+</div>
 
-          <h2 id="country">País</h2>
-          <p id="countryCode" >Código do País</p>
-          <p id="casesConfirmed" >Casos confirmados</p>
-          <p id="LastDate" >Última data</p>
-
-          
-<div class="card shadow" style="width: 18rem;">
-    <img id="avatar" class="card-img-top" src="#" alt="Image">
-    <div class="card-body">
-      <h5 id="first_name" class="card-title"></h5>
-      <p id="last_name" class="card-text"></p>
-    </div>
-  </div>
 
 </body>
 </html>
