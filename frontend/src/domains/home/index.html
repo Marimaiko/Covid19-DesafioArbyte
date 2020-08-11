@@ -10,6 +10,10 @@
     <script src="index3.js" defer></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <!-- <script>
   const fn = () =>
   {
@@ -37,22 +41,42 @@
 
     <div class="container-input">
         <h1>Selecione um país </h1> <br>
-        <form>
           <div class="caixa-input" >
             <span>Insira um país: </span>
-            <input id="countryInput"/>     
+            <input id="countryInput"/>   
+            <!-- 
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Selecione um País da lista
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JavaScript</a></li>
+              </ul>
+            </div> -->
+  
             
+
+
+
+
             <div class="botao">
-             <br> <button class="button" onclick="getData()">Gerar dados</button>
+             <br> <button class="button" onclick="getData()">Gerar dados</button><br>
           </div>
             
-            
-          <h2 id='country' value='china'>Pais</h2 >
+
+
+          <h2 id='country' >Pais</h2 >
           <h2 id="countryCode">Código do País</h2>
           <h2 id="casesConfirmed">Casos confirmados</h2>
-          <h2 id="LastDate">Última data</h2>
+          <h2 id="lastDate">Última data</h2>
         </div>
-        </form>
   </div>
       
 
