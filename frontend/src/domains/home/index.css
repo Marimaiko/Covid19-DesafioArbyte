@@ -3,7 +3,7 @@
     background-image: url("https://plantaodoslagos.com.br/wp-content/uploads/2020/08/blue-covid-banner.jpg");
   
     /* Set a specific height */
-    min-height: 300px; 
+    min-height: 200px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -14,19 +14,50 @@
 
 body
 {
-    /* background-image: url(https://mediastorage.cnnbrasil.com.br/IMAGES/00/00/01/10611_98379B13BC8EB277.jpg); */
-    /* background-color:#323031; */
 background-color: #111110;
 }
 
-.head
-{    
-    text-align: center;
-    display: block;
-    background-color:#7F7979 ;
-
-    padding: 20px;
+div.head
+{
+text-align: center;
+background-color: #7F7979;
+margin-left: 400px;
+margin-right: 400px;
+height: 190px;
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+border-radius: 20px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #111;
+}
+
 
 .container-input
 {
@@ -34,10 +65,15 @@ background-color: #111110;
     color: #e0ddcf;
     border: 10px, black;
     background-color: #01172f;
-    margin: 50px;
-    padding:80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding:50px;
     columns: 2;
     text-align: center;
+}
+
+.caixa-input {
+  color:black;
 }
 
 .info-covid
@@ -45,9 +81,17 @@ background-color: #111110;
     color:#8c4843;
     border: 10px, black;
     background-color: #01172f;
-    margin: 50px;
-    padding:80px;
+    margin: 20px;
+    padding:30px;
+    max-height: 1000px;
     text-align: justify;
+    flex-wrap: wrap;
+}
+
+.techs
+{
+  display: flex;
+  align-items: flex-start;
 }
 
 .button {
@@ -68,3 +112,13 @@ background-color: #111110;
   transform: translateY(4px);
 }
 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
