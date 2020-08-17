@@ -88,6 +88,11 @@ li a:hover:not(.active) {
     flex-wrap: wrap;
 }
 
+p
+{
+  font-size: 20px;
+}
+
 .techs
 {
   display: flex;

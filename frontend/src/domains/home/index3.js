@@ -59,10 +59,12 @@ async function getData()
 
 
 
-const info = `  O primeiro caso da pandemia pelo <a href="https://pebmed.com.br/category/coronavirus">novo coronavírus</a> , SARS-CoV2, foi identificado em Wuhan, na China, no dia 31 de dezembro do último ano. Desde então, os casos começaram a se espalhar rapidamente pelo mundo: primeiro pelo continente asiático, e depois por outros países.
+const info = ` <p> O primeiro caso da pandemia pelo <a href="https://pebmed.com.br/category/coronavirus">novo coronavírus</a> , SARS-CoV2, foi identificado em Wuhan, na China, no dia 31 de dezembro do último ano. Desde então, os casos começaram a se espalhar rapidamente pelo mundo: primeiro pelo continente asiático, e depois por outros países.</p>
 
-Em fevereiro, a transmissão da Covid-19, nome dado à doença causada pelo SARS-CoV2, no Irã e na Itália chamaram a atenção pelo crescimento rápido de novos casos e mortes, fazendo com que o Ministério da Saúde alterasse a definição de caso suspeito para incluir pacientes que estiveram em outros países. No mesmo dia,<a href="https://pebmed.com.br/ministerio-da-saude-confirma-primeiro-caso-de-coronavirus-no-pais/">o primeiro caso do Brasil foi identificado</a> , em São Paulo.
+<p>Em fevereiro, a transmissão da Covid-19, nome dado à doença causada pelo SARS-CoV2, no Irã e na Itália chamaram a atenção pelo crescimento rápido de novos casos e mortes, fazendo com que o Ministério da Saúde alterasse a definição de caso suspeito para incluir pacientes que estiveram em outros países. No mesmo dia,<a href="https://pebmed.com.br/ministerio-da-saude-confirma-primeiro-caso-de-coronavirus-no-pais/">o primeiro caso do Brasil foi identificado</a> , em São Paulo.</p>
 
-Em março, a Organização Mundial da Saúde (OMS) definiu o surto da doença como pandemia. Poucos dias depois, foi confirmada a primeira morte no Brasil, em São Paulo. No mesmo dia, dois pacientes que haviam testado positivo para coronavírus, do Rio de Janeiro, vieram a óbito, mas laudos das mortes ainda não foram divulgados`;
+<p>Em março, a<a href="https://www.who.int/eportuguese/publications/pt/"> Organização Mundial da Saúde (OMS)</a> definiu o surto da doença como pandemia. Poucos dias depois, foi confirmada a primeira morte no Brasil, em São Paulo. No mesmo dia, dois pacientes que haviam testado positivo para coronavírus, do Rio de Janeiro, vieram a óbito, mas laudos das mortes ainda não foram divulgados</p><br>
+<p>Para mais informações sobre o vírus e orientações de como se prevenir, acesse: <a href="https://sbpt.org.br/portal/covid-19-oms/">https://sbpt.org.br/portal/covid-19-oms/</a></p>`;
+
 const infoCovid = document.getElementById('info-covid')
 infoCovid.innerHTML=info;
